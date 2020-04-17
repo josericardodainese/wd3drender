@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'site';
+    focus: any;
+  focus1: any;
+  page = 4;
+    page1 = 5;
 }
