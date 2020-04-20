@@ -10,6 +10,7 @@ export class NavigationComponent implements OnInit {
 
   private toggleButton: any;
   private sidebarVisible: boolean;
+  public title: string = "WD3D - Render & Arquitetura";
 
   constructor(public location: Location, private element: ElementRef) {
     this.sidebarVisible = false;
@@ -41,8 +42,8 @@ sidebarClose() {
     html.classList.remove('nav-open');
 };
 sidebarToggle() {
-    // const toggleButton = this.toggleButton;
-    // const body = document.getElementsByTagName('body')[0];
+    const toggleButton = this.toggleButton;
+    const body = document.getElementsByTagName('body')[0];
     if (this.sidebarVisible === false) {
         this.sidebarOpen();
     } else {
@@ -67,9 +68,11 @@ isDocumentation() {
       titlee = titlee.slice( 1 );
   }
     if( titlee === '/documentation' ) {
+        console.log('isDocumentation ' + true);
         return true;
     }
     else {
+        console.log('isDocumentation ' + false);
         return false;
     }
 }
