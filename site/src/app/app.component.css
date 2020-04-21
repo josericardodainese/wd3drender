@@ -21,12 +21,12 @@
         background-image: url(../assets/img/7.png);
     }
     100% {
-        background-image: url(../assets/img/bg-home-min.png);
+        background-image: url(../assets/img/bg-home.jpg);
     }
   }
 
   .wd3d-render-img {
-    background-image: url(../assets/img/bg-home-min.png);
+    background-image: url(../assets/img/bg-home.jpg);
     animation-name: play;
     animation-duration: 10s;
     animation-iteration-count: 1;
