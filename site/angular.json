@@ -30,9 +30,11 @@
               "src/assets/css/demo.css",
               "src/assets/css/nucleo-icons.css"
             ],
-            "scripts": ["node_modules/jquery/dist/jquery.js",
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
               "node_modules/popper.js/dist/umd/popper.js",
-              "node_modules/bootstrap/dist/js/bootstrap.js"]
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,10 +102,12 @@
               "src/assets/css/demo.css",
               "src/assets/css/nucleo-icons.css"
             ],
-            "scripts": ["node_modules/jquery/dist/jquery.js",
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
               "node_modules/popper.js/dist/umd/popper.js",
               "node_modules/bootstrap/dist/js/bootstrap.js",
-              "http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"]
+              "http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+            ]
           }
         },
         "lint": {
@@ -132,6 +136,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "site"
+    }
+  },
+  "defaultProject": "site",
+  "cli": {
+    "analytics": false
+  }
 }
